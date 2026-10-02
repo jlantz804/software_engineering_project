@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AdaptedPE.HomePage"
+    BackgroundColor="White"
+    NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="22,35,22,25"
+            Spacing="0">
+
+            <!-- Title -->
+            <Label
+                Text="Adapted PE"
+                FontSize="32"
+                FontAttributes="Bold"
+                TextColor="#111111"
+                HorizontalTextAlignment="Center"/>
+
+            <!-- Subtitle -->
+            <Label
+                Text="Choose your school level"
+                FontSize="17"
+                TextColor="#667085"
+                HorizontalTextAlignment="Center"
+                Margin="0,2,0,18"/>
+
+
+            <!-- Elementary School -->
+            <Border
+                BackgroundColor="#FFE29B"
+                StrokeThickness="0"
+                HeightRequest="112"
+                StrokeShape="RoundRectangle 18"
+                Margin="0,0,0,14">
+
+                <Grid
+                    ColumnDefinitions="90,*,35"
+                    Padding="10,12">
+
+                    <Label
+                        Text="🧒🏻 👦🏻 👧🏻"
+                        FontSize="31"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"/>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center"
+                        Spacing="1">
+
+                        <Label
+                            Text="Elementary School"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            TextColor="#171717"/>
+
+                        <Label
+                            Text="(PreK - 5)"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            TextColor="#171717"/>
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="2"
+                        Text="›"
+                        FontSize="34"
+                        TextColor="#222222"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"/>
+
+                </Grid>
+            </Border>
+
+
+            <!-- Middle School -->
+            <Border
+                BackgroundColor="#B9DDFB"
+                StrokeThickness="0"
+                HeightRequest="112"
+                StrokeShape="RoundRectangle 18"
+                Margin="0,0,0,14">
+
+                <Grid
+                    ColumnDefinitions="90,*,35"
+                    Padding="10,12">
+
+                    <Label
+                        Text="👨🏻 👦🏻 👨🏻"
+                        FontSize="31"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"/>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center"
+                        Spacing="1">
+
+                        <Label
+                            Text="Middle School"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            TextColor="#171717"/>
+
+                        <Label
+                            Text="(6 - 8)"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            TextColor="#171717"/>
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="2"
+                        Text="›"
+                        FontSize="34"
+                        TextColor="#222222"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"/>
+
+                </Grid>
+            </Border>
+
+
+            <!-- High School -->
+            <Border
+                BackgroundColor="#BFE8D0"
+                StrokeThickness="0"
+                HeightRequest="112"
+                StrokeShape="RoundRectangle 18">
+
+                <Grid
+                    ColumnDefinitions="90,*,35"
+                    Padding="10,12">
+
+                    <Label
+                        Text="👩🏻 👨🏻"
+                        FontSize="34"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"/>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center"
+                        Spacing="1">
+
+                        <Label
+                            Text="High School"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            TextColor="#171717"/>
+
+                        <Label
+                            Text="(9 - 12)"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            TextColor="#171717"/>
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="2"
+                        Text="›"
+                        FontSize="34"
+                        TextColor="#222222"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"/>
+
+                </Grid>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

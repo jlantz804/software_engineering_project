@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AdaptedPE.SchoolLevelPage"
+    BackgroundColor="White"
+    NavigationPage.HasNavigationBar="False">
+
+    <Grid
+        RowDefinitions="*,72">
+
+        <!-- Main Content -->
+        <ScrollView Grid.Row="0">
+
+            <VerticalStackLayout
+                Padding="20,35,20,10"
+                Spacing="0">
+
+                <!-- Title -->
+                <Label
+                    Text="Adapted PE"
+                    FontSize="32"
+                    FontAttributes="Bold"
+                    TextColor="#111111"
+                    HorizontalTextAlignment="Center"/>
+
+                <!-- Subtitle -->
+                <Label
+                    Text="Support. Modify. Include."
+                    FontSize="17"
+                    TextColor="#667085"
+                    HorizontalTextAlignment="Center"
+                    Margin="0,2,0,18"/>
+
+
+                <!-- Activities -->
+                <Border
+                    BackgroundColor="#B9DDFB"
+                    StrokeThickness="0"
+                    HeightRequest="74"
+                    StrokeShape="RoundRectangle 14"
+                    Margin="0,0,0,10">
+
+                    <Grid
+                        ColumnDefinitions="80,*,35"
+                        Padding="8,5">
+
+                        <Label
+                            Text="🏃"
+                            FontSize="38"
+                            HorizontalTextAlignment="Center"
+                            VerticalTextAlignment="Center"/>
+
+                        <Label
+                            Grid.Column="1"
+                            Text="Activities"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            TextColor="#171717"
+                            VerticalTextAlignment="Center"/>
+
+                        <Label
+                            Grid.Column="2"
+                            Text="›"
+                            FontSize="34"
+                            TextColor="#222222"
+                            HorizontalTextAlignment="Center"
+                            VerticalTextAlignment="Center"/>
+
+                    </Grid>
+                </Border>
+
+
+                <!-- Equipment Modifications -->
+                <Border
+                    BackgroundColor="#BFE8D0"
+                    StrokeThickness="0"
+                    HeightRequest="74"
+                    StrokeShape="RoundRectangle 14"
+                    Margin="0,0,0,10">
+
+                    <Grid
+                        ColumnDefinitions="80,*,35"
+                        Padding="8,5">
+
+                        <Label
+                            Text="🏀"
+                            FontSize="38"
+                            HorizontalTextAlignment="Center"
+                            VerticalTextAlignment="Center"/>
+
+                        <Label
+                            Grid.Column="1"
+                            Text="Equipment&#x0a;Modifications"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            TextColor="#171717"
+                            VerticalTextAlignment="Center"/>
+
+                        <Label
+                            Grid.Column="2"
+                            Text="›"
+                            FontSize="34"
+                            TextColor="#222222"
+                            HorizontalTextAlignment="Center"
+                            VerticalTextAlignment="Center"/>
+
+                    </Grid>
+                </Border>
+
+
+                <!-- Lesson Plans -->
+                <Border
+                    BackgroundColor="#FFE29B"
+                    StrokeThickness="0"
+                    HeightRequest="74"
+                    StrokeShape="RoundRectangle 14"
+                    Margin="0,0,0,10">
+
+                    <Grid
+                        ColumnDefinitions="80,*,35"
+                        Padding="8,5">
+
+                        <Label
+                            Text="☷"
+                            FontSize="42"
+                            HorizontalTextAlignment="Center"
+                            VerticalTextAlignment="Center"/>
+
+                        <Label
+                            Grid.Column="1"
+                            Text="Lesson Plans"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            TextColor="#171717"
+                            VerticalTextAlignment="Center"/>
+
+                        <Label
+                            Grid.Column="2"
+                            Text="›"
+                            FontSize="34"
+                            TextColor="#222222"
+                            HorizontalTextAlignment="Center"
+                            VerticalTextAlignment="Center"/>
+
+                    </Grid>
+                </Border>
+
+
+                <!-- Student Support -->
+                <Border
+                    BackgroundColor="#D8C2F5"
+                    StrokeThickness="0"
+                    HeightRequest="74"
+                    StrokeShape="RoundRectangle 14">
+
+                    <Grid
+                        ColumnDefinitions="80,*,35"
+                        Padding="8,5">
+
+                        <Label
+                            Text="👥"
+                            FontSize="36"
+                            HorizontalTextAlignment="Center"
+                            VerticalTextAlignment="Center"/>
+
+                        <Label
+                            Grid.Column="1"
+                            Text="Student Support&#x0a;Strategies"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            TextColor="#171717"
+                            VerticalTextAlignment="Center"/>
+
+                        <Label
+                            Grid.Column="2"
+                            Text="›"
+                            FontSize="34"
+                            TextColor="#222222"
+                            HorizontalTextAlignment="Center"
+                            VerticalTextAlignment="Center"/>
+
+                    </Grid>
+                </Border>
+
+            </VerticalStackLayout>
+
+        </ScrollView>
+
+
+        <!-- Bottom Navigation -->
+        <Border
+            Grid.Row="1"
+            BackgroundColor="White"
+            Stroke="#E2E2E2"
+            StrokeThickness="1">
+
+            <Grid
+                ColumnDefinitions="*,*,*,*"
+                Padding="5,4">
+
+                <!-- Home -->
+                <VerticalStackLayout
+                    Grid.Column="0"
+                    Spacing="0"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+
+                    <Label
+                        Text="⌂"
+                        FontSize="27"
+                        TextColor="#1464D2"
+                        HorizontalTextAlignment="Center"/>
+
+                    <Label
+                        Text="Home"
+                        FontSize="11"
+                        FontAttributes="Bold"
+                        TextColor="#1464D2"
+                        HorizontalTextAlignment="Center"/>
+
+                </VerticalStackLayout>
+
+
+                <!-- Search -->
+                <VerticalStackLayout
+                    Grid.Column="1"
+                    Spacing="0"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+
+                    <Label
+                        Text="⌕"
+                        FontSize="27"
+                        TextColor="#52606D"
+                        HorizontalTextAlignment="Center"/>
+
+                    <Label
+                        Text="Search"
+                        FontSize="11"
+                        TextColor="#52606D"
+                        HorizontalTextAlignment="Center"/>
+
+                </VerticalStackLayout>
+
+
+                <!-- Favorites -->
+                <VerticalStackLayout
+                    Grid.Column="2"
+                    Spacing="0"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+
+                    <Label
+                        Text="♡"
+                        FontSize="29"
+                        TextColor="#52606D"
+                        HorizontalTextAlignment="Center"/>
+
+                    <Label
+                        Text="Favorites"
+                        FontSize="11"
+                        TextColor="#52606D"
+                        HorizontalTextAlignment="Center"/>
+
+                </VerticalStackLayout>
+
+
+                <!-- Settings -->
+                <VerticalStackLayout
+                    Grid.Column="3"
+                    Spacing="0"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+
+                    <Label
+                        Text="⚙"
+                        FontSize="25"
+                        TextColor="#52606D"
+                        HorizontalTextAlignment="Center"/>
+
+                    <Label
+                        Text="Settings"
+                        FontSize="11"
+                        TextColor="#52606D"
+                        HorizontalTextAlignment="Center"/>
+
+                </VerticalStackLayout>
+
+            </Grid>
+
+        </Border>
+
+    </Grid>
+
+</ContentPage>
