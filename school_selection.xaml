@@ -36,6 +36,9 @@
                 HeightRequest="112"
                 StrokeShape="RoundRectangle 18"
                 Margin="0,0,0,14">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnSchoolSelected" />
+                </Border.GestureRecognizers>
 
                 <Grid
                     ColumnDefinitions="90,*,35"
@@ -85,6 +88,9 @@
                 HeightRequest="112"
                 StrokeShape="RoundRectangle 18"
                 Margin="0,0,0,14">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnSchoolSelected" />
+                </Border.GestureRecognizers>
 
                 <Grid
                     ColumnDefinitions="90,*,35"
@@ -133,6 +139,9 @@
                 StrokeThickness="0"
                 HeightRequest="112"
                 StrokeShape="RoundRectangle 18">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnSchoolSelected" />
+                </Border.GestureRecognizers>
 
                 <Grid
                     ColumnDefinitions="90,*,35"
