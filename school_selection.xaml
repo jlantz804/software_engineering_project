@@ -180,16 +180,19 @@
                         HorizontalTextAlignment="Center"
                         VerticalTextAlignment="Center"/>
 
-                    <Label
-                        Text="Are you a teacher?  Sign in"
-                        FontSize="20"
-                        TextColor="#222222"
-                        HorizontalTextAlignment="Center"
-                        VerticalTextAlignment="End"/>
-
                 </Grid>
             </Border>
-            
+
+            <Label
+                Text="Are you a teacher?  Sign in"
+                FontSize="17"
+                TextColor="#1464D2"
+                HorizontalTextAlignment="Center"
+                Margin="0,18,0,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTeacherSignInTapped" />
+                </Label.GestureRecognizers>
+            </Label>
 
         </VerticalStackLayout>
     </ScrollView>

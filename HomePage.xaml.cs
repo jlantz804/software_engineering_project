@@ -11,4 +11,9 @@ public partial class HomePage : ContentPage
     {
         await Navigation.PushAsync(new SchoolLevelPage());
     }
+
+    private async void OnTeacherSignInTapped(object? sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new TeacherSignInPage());
+    }
 }

@@ -14,8 +14,17 @@
         <ScrollView Grid.Row="0">
 
             <VerticalStackLayout
-                Padding="20,35,20,10"
+                Padding="20,25,20,10"
                 Spacing="0">
+
+                <Button
+                    Text="‹  Back"
+                    FontSize="16"
+                    TextColor="#1464D2"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="Start"
+                    Padding="0"
+                    Clicked="OnBackClicked" />
 
                 <!-- Title -->
                 <Label
