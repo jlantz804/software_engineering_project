@@ -180,8 +180,16 @@
                         HorizontalTextAlignment="Center"
                         VerticalTextAlignment="Center"/>
 
+                    <Label
+                        Text="Are you a teacher?  Sign in"
+                        FontSize="20"
+                        TextColor="#222222"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="End"/>
+
                 </Grid>
             </Border>
+            
 
         </VerticalStackLayout>
     </ScrollView>
