@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Software_App.Views.BasketballPage"
+    BackgroundColor="#F5F7F9"
+    Title="Basketball">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="20,25"
+            Spacing="15">
+
+            <Label
+                Text="🏀 Basketball"
+                FontSize="30"
+                FontAttributes="Bold"
+                TextColor="#1F2937"
+                HorizontalOptions="Center"
+                Margin="0,5,0,0"/>
+
+            <Label
+                Text="Choose a skill or activity"
+                FontSize="15"
+                TextColor="#747D86"
+                HorizontalOptions="Center"
+                Margin="0,0,0,10"/>
+
+            <Border Style="{StaticResource BasketballCardStyle}">
+
+                <Grid ColumnDefinitions="55,*,30">
+
+                    <Label
+                        Text="🎯"
+                        FontSize="30"
+                        VerticalOptions="Center"/>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center">
+
+                        <Label
+                            Text="Shooting Drills"
+                            Style="{StaticResource BasketballTitleStyle}"/>
+
+                        <Label
+                            Text="Modified shooting activities"
+                            Style="{StaticResource BasketballDescriptionStyle}"/>
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="2"
+                        Text="›"
+                        FontSize="30"
+                        TextColor="#8A939D"
+                        VerticalOptions="Center"/>
+
+                </Grid>
+
+            </Border>
+
+            <Border Style="{StaticResource BasketballCardStyle}">
+
+                <Grid ColumnDefinitions="55,*,30">
+
+                    <Label
+                        Text="🏀"
+                        FontSize="30"
+                        VerticalOptions="Center"/>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center">
+
+                        <Label
+                            Text="Dribbling Drills"
+                            Style="{StaticResource BasketballTitleStyle}"/>
+
+                        <Label
+                            Text="Ball control activities"
+                            Style="{StaticResource BasketballDescriptionStyle}"/>
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="2"
+                        Text="›"
+                        FontSize="30"
+                        TextColor="#8A939D"
+                        VerticalOptions="Center"/>
+
+                </Grid>
+
+            </Border>
+
+            <Border Style="{StaticResource BasketballCardStyle}">
+
+                <Grid ColumnDefinitions="55,*,30">
+
+                    <Label
+                        Text="🤝"
+                        FontSize="30"
+                        VerticalOptions="Center"/>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center">
+
+                        <Label
+                            Text="Passing Drills"
+                            Style="{StaticResource BasketballTitleStyle}"/>
+
+                        <Label
+                            Text="Partner and team passing"
+                            Style="{StaticResource BasketballDescriptionStyle}"/>
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="2"
+                        Text="›"
+                        FontSize="30"
+                        TextColor="#8A939D"
+                        VerticalOptions="Center"/>
+
+                </Grid>
+
+            </Border>
+
+            <Border Style="{StaticResource BasketballCardStyle}">
+
+                <Grid ColumnDefinitions="55,*,30">
+
+                    <Label
+                        Text="👥"
+                        FontSize="30"
+                        VerticalOptions="Center"/>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center">
+
+                        <Label
+                            Text="Game Play"
+                            Style="{StaticResource BasketballTitleStyle}"/>
+
+                        <Label
+                            Text="Modified basketball games"
+                            Style="{StaticResource BasketballDescriptionStyle}"/>
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="2"
+                        Text="›"
+                        FontSize="30"
+                        TextColor="#8A939D"
+                        VerticalOptions="Center"/>
+
+                </Grid>
+
+            </Border>
+
+            <Border Style="{StaticResource BasketballCardStyle}">
+
+                <Grid ColumnDefinitions="55,*,30">
+
+                    <Label
+                        Text="⚙️"
+                        FontSize="30"
+                        VerticalOptions="Center"/>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center">
+
+                        <Label
+                            Text="Equipment &amp; Setup"
+                            Style="{StaticResource BasketballTitleStyle}"/>
+
+                        <Label
+                            Text="Adapted equipment options"
+                            Style="{StaticResource BasketballDescriptionStyle}"/>
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="2"
+                        Text="›"
+                        FontSize="30"
+                        TextColor="#8A939D"
+                        VerticalOptions="Center"/>
+
+                </Grid>
+
+            </Border>
+
+            <Border Style="{StaticResource BasketballCardStyle}">
+
+                <Grid ColumnDefinitions="55,*,30">
+
+                    <Label
+                        Text="📋"
+                        FontSize="30"
+                        VerticalOptions="Center"/>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center">
+
+                        <Label
+                            Text="Lesson Ideas"
+                            Style="{StaticResource BasketballTitleStyle}"/>
+
+                        <Label
+                            Text="Basketball lesson examples"
+                            Style="{StaticResource BasketballDescriptionStyle}"/>
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="2"
+                        Text="›"
+                        FontSize="30"
+                        TextColor="#8A939D"
+                        VerticalOptions="Center"/>
+
+                </Grid>
+
+            </Border>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+    <ContentPage.Resources>
+
+        <Style
+            x:Key="BasketballCardStyle"
+            TargetType="Border">
+
+            <Setter Property="BackgroundColor"
+                    Value="White"/>
+
+            <Setter Property="Stroke"
+                    Value="#DDE3E8"/>
+
+            <Setter Property="StrokeThickness"
+                    Value="1"/>
+
+            <Setter Property="Padding"
+                    Value="16"/>
+
+            <Setter Property="HeightRequest"
+                    Value="85"/>
+
+            <Setter Property="StrokeShape">
+                <Setter.Value>
+                    <RoundRectangle CornerRadius="15"/>
+                </Setter.Value>
+            </Setter>
+
+        </Style>
+
+        <Style
+            x:Key="BasketballTitleStyle"
+            TargetType="Label">
+
+            <Setter Property="FontSize"
+                    Value="17"/>
+
+            <Setter Property="FontAttributes"
+                    Value="Bold"/>
+
+            <Setter Property="TextColor"
+                    Value="#222222"/>
+
+        </Style>
+
+        <Style
+            x:Key="BasketballDescriptionStyle"
+            TargetType="Label">
+
+            <Setter Property="FontSize"
+                    Value="13"/>
+
+            <Setter Property="TextColor"
+                    Value="#747D86"/>
+
+        </Style>
+
+    </ContentPage.Resources>
+
+</ContentPage>
