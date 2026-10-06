@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Software_App.Views.ActivitiesPage"
+    BackgroundColor="#F5F7F9"
+    Title="Activities">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="20,25"
+            Spacing="15">
+
+            <!-- Page Title -->
+            <Label
+                Text="Activities"
+                FontSize="30"
+                FontAttributes="Bold"
+                TextColor="#1F2937"
+                HorizontalOptions="Center"
+                Margin="0,5,0,10"/>
+
+            <!-- Search box - visual only -->
+            <Border
+                BackgroundColor="White"
+                Stroke="#DDE3E8"
+                StrokeThickness="1"
+                Padding="15">
+
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="12"/>
+                </Border.StrokeShape>
+
+                <Label
+                    Text="🔍   Search activities..."
+                    FontSize="16"
+                    TextColor="#7A8490"/>
+
+            </Border>
+
+            <!-- Basketball -->
+            <Border Style="{StaticResource ActivityCardStyle}">
+
+                <Grid
+                    ColumnDefinitions="55,*,30">
+
+                    <Label
+                        Text="🏀"
+                        FontSize="32"
+                        VerticalOptions="Center"/>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center"
+                        Spacing="3">
+
+                        <Label
+                            Text="Basketball"
+                            Style="{StaticResource CardTitleStyle}"/>
+
+                        <Label
+                            Text="Modified activities and drills"
+                            Style="{StaticResource CardDescriptionStyle}"/>
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="2"
+                        Text="›"
+                        FontSize="30"
+                        TextColor="#8A939D"
+                        VerticalOptions="Center"/>
+
+                </Grid>
+
+            </Border>
+
+            <!-- Soccer -->
+            <Border Style="{StaticResource ActivityCardStyle}">
+
+                <Grid ColumnDefinitions="55,*,30">
+
+                    <Label Text="⚽"
+                           FontSize="32"
+                           VerticalOptions="Center"/>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center"
+                        Spacing="3">
+
+                        <Label
+                            Text="Soccer"
+                            Style="{StaticResource CardTitleStyle}"/>
+
+                        <Label
+                            Text="Modified activities and drills"
+                            Style="{StaticResource CardDescriptionStyle}"/>
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="2"
+                        Text="›"
+                        FontSize="30"
+                        TextColor="#8A939D"
+                        VerticalOptions="Center"/>
+
+                </Grid>
+
+            </Border>
+
+            <!-- Track & Field -->
+            <Border Style="{StaticResource ActivityCardStyle}">
+
+                <Grid ColumnDefinitions="55,*,30">
+
+                    <Label Text="🏃"
+                           FontSize="32"
+                           VerticalOptions="Center"/>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center"
+                        Spacing="3">
+
+                        <Label
+                            Text="Track &amp; Field"
+                            Style="{StaticResource CardTitleStyle}"/>
+
+                        <Label
+                            Text="Running, jumping and throwing"
+                            Style="{StaticResource CardDescriptionStyle}"/>
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="2"
+                        Text="›"
+                        FontSize="30"
+                        TextColor="#8A939D"
+                        VerticalOptions="Center"/>
+
+                </Grid>
+
+            </Border>
+
+            <!-- Throwing and Catching -->
+            <Border Style="{StaticResource ActivityCardStyle}">
+
+                <Grid ColumnDefinitions="55,*,30">
+
+                    <Label Text="🔴"
+                           FontSize="32"
+                           VerticalOptions="Center"/>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center"
+                        Spacing="3">
+
+                        <Label
+                            Text="Throwing &amp; Catching"
+                            Style="{StaticResource CardTitleStyle}"/>
+
+                        <Label
+                            Text="Ball skill activities"
+                            Style="{StaticResource CardDescriptionStyle}"/>
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="2"
+                        Text="›"
+                        FontSize="30"
+                        TextColor="#8A939D"
+                        VerticalOptions="Center"/>
+
+                </Grid>
+
+            </Border>
+
+            <!-- Cooperative Games -->
+            <Border Style="{StaticResource ActivityCardStyle}">
+
+                <Grid ColumnDefinitions="55,*,30">
+
+                    <Label Text="👥"
+                           FontSize="32"
+                           VerticalOptions="Center"/>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center"
+                        Spacing="3">
+
+                        <Label
+                            Text="Cooperative Games"
+                            Style="{StaticResource CardTitleStyle}"/>
+
+                        <Label
+                            Text="Team-based activities"
+                            Style="{StaticResource CardDescriptionStyle}"/>
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="2"
+                        Text="›"
+                        FontSize="30"
+                        TextColor="#8A939D"
+                        VerticalOptions="Center"/>
+
+                </Grid>
+
+            </Border>
+
+            <!-- Fitness -->
+            <Border Style="{StaticResource ActivityCardStyle}">
+
+                <Grid ColumnDefinitions="55,*,30">
+
+                    <Label Text="💪"
+                           FontSize="32"
+                           VerticalOptions="Center"/>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center"
+                        Spacing="3">
+
+                        <Label
+                            Text="Fitness Activities"
+                            Style="{StaticResource CardTitleStyle}"/>
+
+                        <Label
+                            Text="Strength and movement"
+                            Style="{StaticResource CardDescriptionStyle}"/>
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="2"
+                        Text="›"
+                        FontSize="30"
+                        TextColor="#8A939D"
+                        VerticalOptions="Center"/>
+
+                </Grid>
+
+            </Border>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+    <!-- Styles only for this screen -->
+    <ContentPage.Resources>
+
+        <Style
+            x:Key="ActivityCardStyle"
+            TargetType="Border">
+
+            <Setter Property="BackgroundColor"
+                    Value="White"/>
+
+            <Setter Property="Stroke"
+                    Value="#DDE3E8"/>
+
+            <Setter Property="StrokeThickness"
+                    Value="1"/>
+
+            <Setter Property="Padding"
+                    Value="16"/>
+
+            <Setter Property="HeightRequest"
+                    Value="85"/>
+
+            <Setter Property="StrokeShape">
+                <Setter.Value>
+                    <RoundRectangle CornerRadius="15"/>
+                </Setter.Value>
+            </Setter>
+
+        </Style>
+
+        <Style
+            x:Key="CardTitleStyle"
+            TargetType="Label">
+
+            <Setter Property="FontSize"
+                    Value="17"/>
+
+            <Setter Property="FontAttributes"
+                    Value="Bold"/>
+
+            <Setter Property="TextColor"
+                    Value="#222222"/>
+
+        </Style>
+
+        <Style
+            x:Key="CardDescriptionStyle"
+            TargetType="Label">
+
+            <Setter Property="FontSize"
+                    Value="13"/>
+
+            <Setter Property="TextColor"
+                    Value="#747D86"/>
+
+        </Style>
+
+    </ContentPage.Resources>
+
+</ContentPage>
